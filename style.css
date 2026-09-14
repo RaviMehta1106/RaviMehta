@@ -158,7 +158,7 @@
     }
 
     .sb-link{
-        font: 2vh Consolas, monospace;
+        font: 4vh Consolas, monospace;
     }
 }
 
@@ -250,9 +250,7 @@
     width: 80vw;
 }
 
-.arouseLink{
-    color: var(--purple);
-}
+
 
 .footer{
     max-width: 90vw;
@@ -345,8 +343,8 @@
 .download-link{
   color: var(--backgroundColor2);
   background: var(--textColor2);
-  font: 1.5vw Consolas, monospace;
-  border: .4vw ridge var(--backgroundColor2);
+  font: 3vw Consolas, monospace;
+  border: .8vw ridge var(--backgroundColor2);
   text-decoration: none;
 
   position: absolute;
@@ -379,7 +377,7 @@
 
 @media (max-width: 768px) {
     .download-link{
-        font: 2vh Consolas, monospace;
+        font: 4vh Consolas, monospace;
     }
 
     .resume{
