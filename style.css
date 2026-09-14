@@ -35,7 +35,7 @@
 
 .colorBlock{
     display: flex;
-    background-color: var( --backgroundColor1);
+    background-color: var( --backgroundColor2);
 
     width: 100vw;
 }
