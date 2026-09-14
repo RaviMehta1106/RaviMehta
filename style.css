@@ -194,7 +194,7 @@
     left: 38vw;
     top: 22vw;
     width: 60vw;
-    margin-bottom: 0;
+    
     pointer-events: none;
 }
 
@@ -215,7 +215,7 @@
     font: 1.5vw Consolas, monospace;
     color: var(--lightPurple);
     line-height: 1.7;
-
+    margin-top: 0.5vw;
     width: 54vw;
 }
 
