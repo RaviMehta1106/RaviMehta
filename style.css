@@ -119,8 +119,8 @@
 .sb-link{
   color: var(--backgroundColor2);
   background: var(--backgroundColor);
-  font: 3vw Consolas, monospace;
-  border: .8vw ridge var(--backgroundColor2);
+  font: 1.5vw Consolas, monospace;
+  border: .2vw ridge var(--backgroundColor2);
   text-decoration: none;
 
   align-self: center;
@@ -158,7 +158,7 @@
     }
 
     .sb-link{
-        font: 4vh Consolas, monospace;
+        font: 2vh Consolas, monospace;
     }
 }
 
@@ -343,8 +343,8 @@
 .download-link{
   color: var(--backgroundColor2);
   background: var(--textColor2);
-  font: 3vw Consolas, monospace;
-  border: .8vw ridge var(--backgroundColor2);
+  font: 1.5vw Consolas, monospace;
+  border: .4vw ridge var(--backgroundColor2);
   text-decoration: none;
 
   position: absolute;
@@ -377,7 +377,7 @@
 
 @media (max-width: 768px) {
     .download-link{
-        font: 4vh Consolas, monospace;
+        font: 2vh Consolas, monospace;
     }
 
     .resume{
