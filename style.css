@@ -1,7 +1,7 @@
 :root{
-      background-color: #fefafa;/* grey */
+      background-color: #131212;/* grey */
 
-      --backgroundColor2: #1a1a1a; /*darker grey */
+      --backgroundColor2: #cbfde7; /*darker grey */
 
       --textColor: #045f39; /* dark green */
       --textColor2: #82e079; /* lighter green */
@@ -35,7 +35,7 @@
 
 .colorBlock{
     display: flex;
-    background-color: var( --backgroundColor2);
+    background-color: var( --backgroundColor1);
 
     width: 100vw;
 }
@@ -55,7 +55,6 @@
 .nameText{
     color: var(--textColor);
     font: 6vw Consolas, monospace;
-    text-shadow: -.1vw .1vw 0 var(--lightGreen);
     white-space: nowrap;
 
     margin: 0;
@@ -66,7 +65,6 @@
 .welcomeText{
     color: var(--textColor);
     font: 1vw Consolas, monospace;
-    text-shadow: -.1vw .1vw 0 var(--lightGreen);
     margin: 0;
     gap: 1vw;
     align-self: center;
