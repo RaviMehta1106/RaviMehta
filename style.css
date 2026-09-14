@@ -119,8 +119,8 @@
 .sb-link{
   color: var(--backgroundColor2);
   background: var(--backgroundColor);
-  font: 1.5vw Consolas, monospace;
-  border: .4vw ridge var(--backgroundColor2);
+  font: 3vw Consolas, monospace;
+  border: .8vw ridge var(--backgroundColor2);
   text-decoration: none;
 
   align-self: center;
