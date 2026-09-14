@@ -194,7 +194,7 @@
     left: 38vw;
     top: 22vw;
     width: 60vw;
-
+    margin-bottom: 0;
     pointer-events: none;
 }
 
