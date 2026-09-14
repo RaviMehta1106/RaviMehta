@@ -207,7 +207,7 @@
     color: var(--purple);
     text-shadow: -.15vw .15vw 0 var(--darkPurple);
     font-size: 3vw;
-
+    margin-top: 0.5vw;
     width: 60vw;
 }
 
@@ -215,7 +215,7 @@
     font: 1.5vw Consolas, monospace;
     color: var(--lightPurple);
     line-height: 1.7;
-    margin-top: 0.5vw;
+    margin-top: 0vw;
     width: 54vw;
 }
 
