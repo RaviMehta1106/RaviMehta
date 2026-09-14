@@ -64,7 +64,7 @@
 
 .welcomeText{
     color: var(--textColor);
-    font: 2.5vw Consolas, monospace;
+    font: 2vw Consolas, monospace;
     margin: 0;
     gap: 1vw;
     align-self: center;
