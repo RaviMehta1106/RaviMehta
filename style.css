@@ -55,7 +55,7 @@
 .nameText{
     color: var(--textColor);
     font: 6vw Consolas, monospace;
-    text-shadow: -.3vw .3vw 0 var(--lightGreen);
+    text-shadow: -.1vw .1vw 0 var(--lightGreen);
     white-space: nowrap;
 
     margin: 0;
@@ -66,7 +66,7 @@
 .welcomeText{
     color: var(--textColor);
     font: 1vw Consolas, monospace;
-    text-shadow: -.3vw .3vw 0 var(--lightGreen);
+    text-shadow: -.1vw .1vw 0 var(--lightGreen);
     margin: 0;
     gap: 1vw;
     align-self: center;
@@ -194,22 +194,6 @@
     
     margin-bottom: 2vw;
     width: 25vw;
-}
-
-.defaceButton{
-  color: var(--backgroundColor2);
-  background: var(--textColor2);
-  font: 1.5vw Consolas, monospace;
-  border: .4vw ridge var(--backgroundColor2);
-
-  align-self: center;
-}
-
-@media (pointer: fine) {
-    .defaceButton:hover{
-    color: var(--textColor2);
-    background: var(--textColor3);
-    }
 }
 
 
