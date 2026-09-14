@@ -119,11 +119,12 @@
 .sb-link{
   color: var(--backgroundColor2);
   background: var(--backgroundColor);
-  font: 1.5vw Consolas, monospace;
-  border: .2vw ridge var(--backgroundColor2);
+  font: 2.25vw Consolas, monospace;
+  border: .3vw ridge var(--backgroundColor2);
   text-decoration: none;
-
   align-self: center;
+  padding: .3vw .6vw;
+  display: inline-block;
 }
 
 .sb-link:hover{
@@ -158,8 +159,10 @@
     }
 
     .sb-link{
-        font: 2vh Consolas, monospace;
-    }
+    font: 3vh Consolas, monospace;
+    padding: .5vh 1vh;
+    display: inline-block;
+    } 
 }
 
 /* INDEX BODY */
