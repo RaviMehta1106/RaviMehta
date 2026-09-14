@@ -271,10 +271,6 @@
         margin-top: 5vh;
     }
 
-    .defaceButton{
-        font: 2vh Consolas, monospace;
-    }
-
     .aboutMe{
         display: none;
     }
@@ -353,6 +349,8 @@
   position: absolute;
   top: 2vw;
   right: 2vw;
+
+  padding: 1vw 1.5vw;
 }
 
 .download-link:hover{
