@@ -1,0 +1,421 @@
+:root{
+      background-color: #fefafa;/* grey */
+
+      --backgroundColor2: #1a1a1a; /*darker grey */
+
+      --textColor: #045f39; /* dark green */
+      --textColor2: #82e079; /* lighter green */
+      --textColor3: #1a4101; /*darkest green */
+
+      /* for game blurbs */
+      --green: #005a42;/* 35ff69 */
+      --darkGreen: #1a7a32;
+      --lightGreen: #aefac1;
+
+      --red: #ef2d74; /* ef2d56 */
+      --darkRed: #560415;
+      --lightRed: #ff5076;
+
+      --blue: #0027c5;/* 2ec4b6 */
+      --darkBlue: #2069b8;
+      --lightBlue: #71d4ed;
+
+      --redred: #ff0000; /* ef2d56 */
+
+      /* for about me */
+      --purple: #645dd7;
+      --darkPurple: #2f2d62;
+      --lightPurple: #8a86d6;
+
+      overflow-x: hidden; /* get rid of horizontal scroll */
+}
+
+/* flex-direction sets main axis, justify-content aligns on main axis */
+/* align-itmes/self aligns on cross axis */
+
+.colorBlock{
+    display: flex;
+    background-color: var( --backgroundColor2);
+
+    width: 100vw;
+}
+
+/*HEADER*/
+.header{
+    display: flex;
+    flex-direction: column;
+
+    height: 11vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    width: 60vw;
+}
+
+
+.nameText{
+    color: var(--textColor);
+    font: 6vw Consolas, monospace;
+    text-shadow: -.3vw .3vw 0 var(--lightGreen);
+    white-space: nowrap;
+
+    margin: 0;
+    gap: 1vw;
+    align-self: center;
+}
+
+.welcomeText{
+    color: var(--textColor);
+    font: 1vw Consolas, monospace;
+    text-shadow: -.3vw .3vw 0 var(--lightGreen);
+    margin: 0;
+    gap: 1vw;
+    align-self: center;
+
+}
+
+
+@media (max-width: 768px) {
+    .header{
+        width: 100vw;
+        height: 15vh;
+    }
+
+    .nameText{
+        font: 6vh Consolas, monospace;
+    }
+
+
+    .welcomeText{
+        font: 2vh Consolas, monospace;
+    }
+}
+
+/* SUBHEADER */
+.subHeader{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50vw;
+    width: 46vw; 
+    height: 4vw;
+}
+
+.sb-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height : 5vw;
+}
+
+.subHeaderText{
+    color: var(--textColor);
+    font: 1.5vw Consolas, monospace;
+
+    margin-bottom: 1vw;
+}
+
+.subHeaderText2{
+    color: var(--textColor);
+    font: 3vw Consolas, monospace;
+
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+.subHeaderText3{
+    color: var(--textColor);
+    font: 1.5vw Consolas, monospace;
+
+    margin-bottom: 1vw;
+}
+
+
+.sb-link{
+  color: var(--backgroundColor2);
+  background: var(--textColor2);
+  font: 1.5vw Consolas, monospace;
+  border: .4vw ridge var(--backgroundColor2);
+  text-decoration: none;
+
+  align-self: center;
+}
+
+.sb-link:hover{
+  color: var(--textColor2);
+  background: var(--textColor3);
+
+}
+
+@media (max-width: 768px) {
+    .subHeader{
+        width: 97vw;
+        margin-left: 1vw;
+         margin-right: 2vw;
+        height: 10vh;
+        
+    }
+
+    .sb-column{
+        height: 5vh;
+    }
+
+    .subHeaderText{
+        font: 1.5vh Consolas, monospace;
+    }
+
+    .subHeaderText2{
+        font: 3.8vh Consolas, monospace;
+    }
+
+    .subHeaderText3{
+        font: 1.5vh Consolas, monospace;
+    }
+
+    .sb-link{
+        font: 2vh Consolas, monospace;
+    }
+}
+
+/* INDEX BODY */
+.pictureStack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 40vw;
+}
+
+.selfie{
+    border: 1vw solid var(--backgroundColor2);
+
+    
+    margin-bottom: 2vw;
+    width: 25vw;
+}
+
+.defaceButton{
+  color: var(--backgroundColor2);
+  background: var(--textColor2);
+  font: 1.5vw Consolas, monospace;
+  border: .4vw ridge var(--backgroundColor2);
+
+  align-self: center;
+}
+
+@media (pointer: fine) {
+    .defaceButton:hover{
+    color: var(--textColor2);
+    background: var(--textColor3);
+    }
+}
+
+
+.aboutMe{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    left: 38vw;
+    top: 22vw;
+    width: 60vw;
+
+}
+
+.aboutMeMobile{
+    display: none;
+}
+
+.aboutMeHeader{
+    font-family: Consolas, monospace;
+    color: var(--purple);
+    text-shadow: -.15vw .15vw 0 var(--darkPurple);
+    font-size: 3vw;
+
+    width: 60vw;
+}
+
+.aboutMeP{
+    font: 1.5vw Consolas, monospace;
+    color: var(--lightPurple);
+    line-height: 1.7;
+
+    width: 54vw;
+}
+
+.aboutMePMobile{
+    display: none;
+}
+
+.aboutMePMobile2{
+    display: none;
+}
+
+.realStuffStack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+}
+
+.realStuff{
+    font-family: Consolas, monospace;
+    color: var(--purple);
+    text-shadow: -.15vw .15vw 0 var(--darkPurple);
+    font-size: 3vw;
+
+    width: 90vw;
+    margin-top: 8vw;
+}
+
+.realStuffP{
+    font: 1.5vw Consolas, monospace;
+    color: var(--lightPurple);
+    line-height: 1.7;
+
+    width: 80vw;
+}
+
+.arouseLink{
+    color: var(--purple);
+}
+
+.footer{
+    max-width: 90vw;
+}
+
+@media (max-width: 768px) {
+
+    .pictureStack{
+        margin-top: 5vh;
+        width: 60vw;
+    }
+
+    .selfie{
+        width: 40vw;
+        margin-top: 5vh;
+    }
+
+    .defaceButton{
+        font: 2vh Consolas, monospace;
+    }
+
+    .aboutMe{
+        display: none;
+    }
+
+    .aboutMeP{
+        display: none;
+    }
+
+    .aboutMeMobile{
+        display: block;
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        width: 100vw;
+        top:33vh;
+        left: 55vw;
+    }
+
+    .aboutMeHeader{
+        left: 60vw; 
+        width: 40vw;
+        align-items: flex-end;
+    }
+
+    .aboutMePMobile{
+        display: block;
+        font: 1.5vh Consolas, monospace;
+        color: var(--lightPurple);
+        line-height: 1.7;
+        align-items: flex-end;
+
+        width: 40vw;
+    }
+
+    .aboutMePMobile2{
+        display: block;
+        position: absolute;
+
+        font: 1.5vh Consolas, monospace;
+        color: var(--lightPurple);
+        line-height: 1.7;
+        align-items: flex-start;
+
+
+        width: 90vw;
+        top: 75vh;
+        left: 8vw;
+  
+    }
+
+    .realStuffStack{
+        margin-top: 30vh;
+    }
+
+    .realStuffP{
+        font: 1.5vh Consolas, monospace;
+        line-height: 1.7; /* why do i need t reset line-height here */
+    }
+
+
+}
+
+
+/*RESUME SCREEN*/
+.download-link{
+  color: var(--backgroundColor2);
+  background: var(--textColor2);
+  font: 1.5vw Consolas, monospace;
+  border: .4vw ridge var(--backgroundColor2);
+  text-decoration: none;
+
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+}
+
+.download-link:hover{
+  color: var(--textColor2);
+  background: var(--textColor3);
+
+}
+
+.resumeBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.resume{
+    margin-top: 10vw;
+    width: 80vw;
+    height: 120vw;
+
+    border: none;
+    outline:  none;
+}
+
+@media (max-width: 768px) {
+    .download-link{
+        font: 2vh Consolas, monospace;
+    }
+
+    .resume{
+        width: 100vw;
+    }
+
+}
