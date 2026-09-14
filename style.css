@@ -1,10 +1,10 @@
 :root{
       background-color: #131212;/* grey */
 
-      --backgroundColor2: #cbfde7; /*darker grey */
+      --backgroundColor2: #f8faf9; /*darker grey */
 
       --textColor: #045f39; /* dark green */
-      --textColor2: #82e079; /* lighter green */
+      --textColor2: #6c34f8; /* lighter green */
       --textColor3: #1a4101; /*darkest green */
 
       /* for game blurbs */
@@ -109,22 +109,8 @@
 }
 
 .subHeaderText{
-    color: var(--textColor);
-    font: 1.5vw Consolas, monospace;
-
-    margin-bottom: 1vw;
-}
-
-.subHeaderText2{
-    color: var(--textColor);
+    color: var(--textColor2);
     font: 3vw Consolas, monospace;
-
-    margin-top: 1vw;
-    margin-bottom: 0;
-}
-.subHeaderText3{
-    color: var(--textColor);
-    font: 1.5vw Consolas, monospace;
 
     margin-bottom: 1vw;
 }
@@ -132,7 +118,7 @@
 
 .sb-link{
   color: var(--backgroundColor2);
-  background: var(--textColor2);
+  background: var(--backgroundColor);
   font: 1.5vw Consolas, monospace;
   border: .4vw ridge var(--backgroundColor2);
   text-decoration: none;
