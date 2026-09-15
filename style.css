@@ -204,8 +204,7 @@
 
 .aboutMeHeader{
     font-family: Consolas, monospace;
-    color: var(--purple);
-    text-shadow: -.15vw .15vw 0 var(--darkPurple);
+    color: var(--textColor);
     font-size: 3vw;
     margin-top: 4vw;
     width: 60vw;
@@ -213,7 +212,7 @@
 
 .aboutMeP{
     font: 1.5vw Consolas, monospace;
-    color: var(--lightPurple);
+    color: var(--textColor);
     line-height: 1.7;
     margin-top: 0vw;
     width: 54vw;
@@ -238,8 +237,7 @@
 
 .realStuff{
     font-family: Consolas, monospace;
-    color: var(--purple);
-    text-shadow: -.15vw .15vw 0 var(--darkPurple);
+    color: var(--textColor);
     font-size: 3vw;
 
     width: 90vw;
@@ -248,7 +246,7 @@
 
 .realStuffP{
     font: 1.5vw Consolas, monospace;
-    color: var(--lightPurple);
+    color: var(--textColor);
     line-height: 1.7;
 
     width: 80vw;
