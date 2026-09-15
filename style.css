@@ -133,7 +133,7 @@
 .subHeaderText{
     color: var(--textColor2);
     font: 3vw Consolas, monospace;
-
+    margin-top: 1vw;
     margin-bottom: 1vw;
 }
 
