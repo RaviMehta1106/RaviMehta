@@ -196,8 +196,8 @@
     width: 60vw;
 
     background-color: var(--backgroundColor2);
-    padding: 1vw;
-    border: .3vw solid var(--textColor);
+    padding: 1vw 2vw;
+    border: .15vw solid var(--textColor);
     box-sizing: border-box;
 
     pointer-events: none;
@@ -208,7 +208,7 @@
     color: var(--textColor);
     font-size: 3vw;
     margin-top: 0;
-    width: 60vw;
+    width: 56vw;
 }
 
 .aboutMeP{
@@ -216,7 +216,7 @@
     color: var(--textColor);
     line-height: 1.7;
     margin-top: 0;
-    width: 54vw;
+    width: 52vw;
 }
 
 .aboutMePMobile{
