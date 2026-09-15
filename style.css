@@ -75,12 +75,12 @@
 .contactMe{
     position: absolute;
 
-    top: 1vw;
+    top: 0.5vw;
     right: 2vw;
 
     color: var(--textColor);
-    font: 1.5vw Consolas, monospace;
-    line-height: 1.6;
+    font: 1.2vw Consolas, monospace;
+    line-height: 1.4;
 
     text-align: left;
 }
