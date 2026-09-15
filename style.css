@@ -192,24 +192,22 @@
     align-items: center;
     
     left: 38vw;
-    top: 22vw;
+    top: 25vw;
     width: 60vw;
 
     background-color: var(--backgroundColor2);
     padding: 1vw;
-    
-    pointer-events: none;
-}
+    border: .3vw solid var(--textColor);
+    box-sizing: border-box;
 
-.aboutMeMobile{
-    display: none;
+    pointer-events: none;
 }
 
 .aboutMeHeader{
     font-family: Consolas, monospace;
     color: var(--textColor);
     font-size: 3vw;
-    margin-top: 4vw;
+    margin-top: 0;
     width: 60vw;
 }
 
@@ -217,7 +215,7 @@
     font: 1.5vw Consolas, monospace;
     color: var(--textColor);
     line-height: 1.7;
-    margin-top: 0vw;
+    margin-top: 0;
     width: 54vw;
 }
 
