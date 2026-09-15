@@ -194,6 +194,9 @@
     left: 38vw;
     top: 22vw;
     width: 60vw;
+
+    background-color: var(--backgroundColor2);
+    padding: 1vw;
     
     pointer-events: none;
 }
