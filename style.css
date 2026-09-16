@@ -1,10 +1,10 @@
 :root{
-      background-color: #131212;/* grey */
+      background-color: #131212;/* black */
 
-      --backgroundColor2: #f8faf9; /*darker grey */
+      --backgroundColor2: #f8faf9; /*white */
 
       --textColor: #045f39; /* dark green */
-      --textColor2: #5d22f1; /* lighter green */
+      --textColor2: #6245ac; /* purple */
       --textColor3: #1a4101; /*darkest green */
 
       /* for game blurbs */
