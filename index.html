@@ -11,7 +11,7 @@
     <title>Ravi Mehta</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+  </head>
 
 <!-- HEADER -->
 <section class="colorBlock">
@@ -21,9 +21,9 @@
 
         <div class="contactMe">
             <div class="contactTitle">Contact me:</div>
-            <div><a href="mailto:rmehta1106@gmail.com"> rmehta1106@gmail.com</a></div>
+            <div><a href="mailto:rmehta1106@gmail.com">rmehta1106@gmail.com</a></div>
             <div>(925)-786-6953</div>
-            <div><a href="https://www.linkedin.com/in/ravimmehta/" target="_blank"> LinkedIn </a></div>
+            <div><a href="https://www.linkedin.com/in/ravimmehta/" target="_blank">LinkedIn</a></div>
         </div>
     </section>
 </section>
@@ -31,52 +31,300 @@
 <!-- SUB HEADER -->
 
 <section class="subHeader">
-        <div class="sb-column">
-            <p class="subHeaderText">Download my Resume&nbsp;</p>
-            <a href="/assets/Mehta_Ravi_Resume_OhioState.pdf" class="sb-link">Resume</a>
-        </div>
+    <div class="sb-column">
+        <p class="subHeaderText">Download my Resume&nbsp;</p>
+        <a href="/assets/Mehta_Ravi_Resume_OhioState.pdf" class="sb-link">Resume</a>
+    </div>
 </section>
 
 
 <div class="pictureStack">
-  <img class="selfie" src="/assets/RM_Headshot.png" alt="Picture of Ravi">
+    <img class="selfie" src="/assets/RM_Headshot.png" alt="Picture of Ravi">
 </div>
+
 
 <div class="aboutMe">
     <h1 class="aboutMeHeader">About Me</h1>
     <p class="aboutMeP">
         I’m an Electrical & Computer Engineering student at The Ohio State University with a passion for hands-on engineering, testing, and problem solving. I enjoy working on projects that combine hardware and software, analyzing data, and turning ideas into practical solutions. I’m currently building my skills in areas like circuits, embedded systems, controls, and engineering design while gaining real-world experience through engineering projects and internships.
-
     </p>
 </div>
 
-    <!-- for mobile-->
+
+<!-- for mobile -->
 <div class="aboutMeMobile">
     <p class="aboutMePMobile">
         I’m an Electrical & Computer Engineering student at The Ohio State University with a passion for hands-on engineering, testing, and problem solving. I enjoy working on projects that combine hardware and software, analyzing data, and turning ideas into practical solutions. I’m currently building my skills in areas like circuits, embedded systems, controls, and engineering design while gaining real-world experience through engineering projects and internships.
     </p>
 </div>
 
-    <p class="aboutMePMobile2">
-      testing testing testing
 
-    </p>
-
-
+<p class="aboutMePMobile2">
+    testing testing testing
+</p>
 
 
 <div class="realStuffStack">
-<h1 class="realStuff">Projects</h1>
+    <h1 class="realStuff">Projects</h1>
+
     <p class="realStuffP">
-    projects test test
-    </p>
-    <p class="realStuffP">
-   projects test test
+        projects test test
     </p>
 
-<img class="footer" src="/assets/3 fishies cut.png" alt="ASCII art of 3 fishies">
+    <p class="realStuffP">
+        projects test test
+    </p>
+
+    <img class="footer" src="/assets/3 fishies cut.png" alt="ASCII art of 3 fishies">
 </div>
+
 </html>
+style.css
 
 
+/* =========================================================
+   MOBILE ONLY
+   Everything above this stays exactly the same for PC
+   ========================================================= */
 
+@media (max-width: 768px) {
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    .colorBlock {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: auto;
+
+        margin: 0;
+        padding: 5vh 4vw 3vh 4vw;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: static;
+    }
+
+    .nameText {
+        font: 8vw Consolas, monospace;
+
+        margin: 0;
+
+        text-align: center;
+        white-space: normal;
+    }
+
+    .welcomeText {
+        font: 4vw Consolas, monospace;
+
+        margin: 1vh 0 0 0;
+
+        text-align: center;
+    }
+
+    .contactMe {
+        position: static;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 3vh;
+
+        color: var(--textColor2);
+        font: 3.5vw Consolas, monospace;
+        line-height: 1.5;
+
+        text-align: center;
+    }
+
+    .contactTitle {
+        font-size: 4vw;
+    }
+
+
+    /* =========================
+       RESUME
+       ========================= */
+
+    .subHeader {
+        width: 100%;
+        height: auto;
+
+        margin: 0;
+        padding: 2vh 4vw 4vh 4vw;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sb-column {
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subHeaderText {
+        font: 4vw Consolas, monospace;
+
+        margin: 0 0 1.5vh 0;
+
+        text-align: center;
+    }
+
+    .sb-link {
+        font: 4vw Consolas, monospace;
+
+        padding: .8vh 3vw;
+
+        display: inline-block;
+
+        align-self: center;
+    }
+
+
+    /* =========================
+       PICTURE
+       ========================= */
+
+    .pictureStack {
+        width: 100%;
+
+        margin: 2vh 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selfie {
+        width: 60vw;
+        max-width: 300px;
+
+        margin: 0;
+    }
+
+
+    /* =========================
+       ABOUT ME
+       ========================= */
+
+    .aboutMe {
+        position: static;
+
+        display: flex;
+
+        width: 90%;
+
+        margin: 5vh auto 0 auto;
+
+        padding: 4vw;
+
+        box-sizing: border-box;
+
+        pointer-events: auto;
+
+        text-align: center;
+    }
+
+    .aboutMeHeader {
+        width: 100%;
+
+        font-size: 7vw;
+
+        margin: 0 0 2vh 0;
+
+        text-align: center;
+    }
+
+    .aboutMeP {
+        width: 100%;
+
+        font: 3.5vw Consolas, monospace;
+        line-height: 1.7;
+
+        margin: 0;
+
+        text-align: center;
+    }
+
+
+    /* Hide the extra mobile versions */
+
+    .aboutMeMobile {
+        display: none;
+    }
+
+    .aboutMePMobile {
+        display: none;
+    }
+
+    .aboutMePMobile2 {
+        display: none;
+    }
+
+
+    /* =========================
+       PROJECTS
+       ========================= */
+
+    .realStuffStack {
+        width: 100%;
+
+        margin-top: 6vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .realStuff {
+        width: 90%;
+
+        font-size: 7vw;
+
+        margin: 0 0 3vh 0;
+
+        text-align: center;
+    }
+
+    .realStuffP {
+        width: 85%;
+
+        font: 3.5vw Consolas, monospace;
+        line-height: 1.7;
+
+        margin: 1vh 0;
+
+        text-align: center;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    .footer {
+        width: 80%;
+        max-width: 400px;
+
+        margin-top: 5vh;
+    }
+}
