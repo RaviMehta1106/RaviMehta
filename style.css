@@ -195,6 +195,8 @@
     align-items: center;
 
     width: 40vw;
+
+    transform: translateX(-4vw);
 }
 
 .selfie{
@@ -213,7 +215,7 @@
     justify-content: center;
     align-items: center;
     
-    left: 38vw;
+    left: 34vw;
     top: 25vw;
     width: 60vw;
 
