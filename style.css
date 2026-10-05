@@ -487,6 +487,8 @@
         box-sizing: border-box;
 
         text-align: center;
+
+        background-color: var(--backgroundColor2);
     }
 
     .nameTextMobile {
