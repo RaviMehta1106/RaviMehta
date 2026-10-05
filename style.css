@@ -279,8 +279,15 @@
 
 
 
-.footer{
-    max-width: 90vw;
+.footer {
+
+    width: 80vw;
+
+    max-width: 400px;
+
+    margin-top: 2vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -731,11 +738,13 @@
 
     .footerMobile {
 
-        width: 80vw;
+    width: 80vw;
 
-        max-width: 400px;
+    max-width: 400px;
 
-        margin-top: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
     }
 
 }
