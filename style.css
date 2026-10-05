@@ -55,7 +55,7 @@
 
 .nameText{
     color: var(--textColor);
-    font: 6vw Consolas, monospace;
+    font: bold 6vw Georgia, "Times New Roman", serif;
     white-space: nowrap;
 
     margin: 0;
@@ -65,7 +65,7 @@
 
 .welcomeText{
     color: var(--textColor);
-    font: 2vw Consolas, monospace;
+    font: 2vw Georgia, "Times New Roman", serif;
     margin: 0;
     gap: 1vw;
     align-self: center;
@@ -79,7 +79,7 @@
     right: 2vw;
 
     color: var(--textColor2);
-    font: 1.2vw Consolas, monospace;
+    font: 1.2vw Georgia, "Times New Roman", serif;
     line-height: 1.4;
 
     text-align: left;
@@ -97,12 +97,12 @@
     }
 
     .nameText{
-        font: 6vh Consolas, monospace;
+        font: bold 6vh Georgia, "Times New Roman", serif;
     }
 
 
     .welcomeText{
-        font: 2vh Consolas, monospace;
+        font: 2vh Georgia, "Times New Roman", serif;
     }
 
     .contactMe{
@@ -132,7 +132,7 @@
 
 .subHeaderText{
     color: var(--textColor2);
-    font: 3vw Consolas, monospace;
+    font: 3vw Georgia, "Times New Roman", serif;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
 }
@@ -141,7 +141,7 @@
 .sb-link{
   color: var(--backgroundColor2);
   background: var(--backgroundColor);
-  font: 2.25vw Consolas, monospace;
+  font: 2.25vw Georgia, "Times New Roman", serif;
   border: .3vw ridge var(--backgroundColor2);
   text-decoration: none;
   align-self: center;
@@ -169,19 +169,19 @@
     }
 
     .subHeaderText{
-        font: 1.5vh Consolas, monospace;
+        font: 1.5vh Georgia, "Times New Roman", serif;
     }
 
     .subHeaderText2{
-        font: 3.8vh Consolas, monospace;
+        font: 3.8vh Georgia, "Times New Roman", serif;
     }
 
     .subHeaderText3{
-        font: 1.5vh Consolas, monospace;
+        font: 1.5vh Georgia, "Times New Roman", serif;
     }
 
     .sb-link{
-    font: 3vh Consolas, monospace;
+    font: 3vh Georgia, "Times New Roman", serif;
     padding: .5vh 1vh;
     display: inline-block;
     } 
@@ -228,7 +228,7 @@
 }
 
 .aboutMeHeader{
-    font-family: Consolas, monospace;
+    font-family: Georgia, "Times New Roman", serif;
     color: var(--textColor);
     font-size: 3vw;
     margin-top: 0;
@@ -236,7 +236,7 @@
 }
 
 .aboutMeP{
-    font: 1.5vw Consolas, monospace;
+    font: 1.5vw Georgia, "Times New Roman", serif;
     color: var(--textColor);
     line-height: 1.7;
     margin-top: 0;
@@ -261,7 +261,7 @@
 }
 
 .realStuff{
-    font-family: Consolas, monospace;
+    font-family: Georgia, "Times New Roman", serif;
     color: var(--textColor);
     font-size: 3vw;
 
@@ -270,7 +270,7 @@
 }
 
 .realStuffP{
-    font: 1.5vw Consolas, monospace;
+    font: 1.5vw Georgia, "Times New Roman", serif;
     color: var(--textColor);
     line-height: 1.7;
 
@@ -336,7 +336,7 @@
 
         width: 100%;
 
-        font-family: Consolas, monospace;
+        font-family: Georgia, "Times New Roman", serif;
         color: var(--textColor);
         font-size: 7vw;
 
@@ -350,7 +350,7 @@
 
         width: 100%;
 
-        font: 3.5vw Consolas, monospace;
+        font: 3.5vw Georgia, "Times New Roman", serif;
         color: var(--textColor);
         line-height: 1.7;
 
@@ -368,7 +368,7 @@
 
         margin: 4vh auto 0 auto;
 
-        font: 3.5vw Consolas, monospace;
+        font: 3.5vw Georgia, "Times New Roman", serif;
         color: var(--lightPurple);
         line-height: 1.7;
 
@@ -380,7 +380,7 @@
     }
 
     .realStuffP{
-        font: 1.5vh Consolas, monospace;
+        font: 1.5vh Georgia, "Times New Roman", serif;
         line-height: 1.7; /* why do i need t reset line-height here */
     }
 
@@ -392,7 +392,7 @@
 .download-link{
   color: var(--backgroundColor2);
   background: var(--textColor2);
-  font: 1.5vw Consolas, monospace;
+  font: 1.5vw Georgia, "Times New Roman", serif;
   border: .4vw ridge var(--backgroundColor2);
   text-decoration: none;
 
@@ -428,7 +428,7 @@
 
 @media (max-width: 768px) {
     .download-link{
-        font: 2vh Consolas, monospace;
+        font: 2vh Georgia, "Times New Roman", serif;
     }
 
     .resume{
@@ -505,7 +505,7 @@
 
         color: var(--textColor);
 
-        font: 8vw Consolas, monospace;
+        font: bold 8vw Georgia, "Times New Roman", serif;
 
         margin: 0;
 
@@ -518,7 +518,7 @@
 
         color: var(--textColor);
 
-        font: 4vw Consolas, monospace;
+        font: 4vw Georgia, "Times New Roman", serif;
 
         margin: 1vh 0 0 0;
 
@@ -535,7 +535,7 @@
 
         color: var(--textColor2);
 
-        font: 3.5vw Consolas, monospace;
+        font: 3.5vw Georgia, "Times New Roman", serif;
 
         line-height: 1.5;
 
@@ -573,7 +573,7 @@
 
         color: var(--textColor2);
 
-        font: 4vw Consolas, monospace;
+        font: 4vw Georgia, "Times New Roman", serif;
 
         margin: 0 0 1.5vh 0;
     }
@@ -583,7 +583,7 @@
         color: var(--backgroundColor2);
         background: var(--textColor);
 
-        font: 4vw Consolas, monospace;
+        font: 4vw Georgia, "Times New Roman", serif;
 
         border: .5vw ridge var(--backgroundColor2);
 
@@ -655,7 +655,7 @@
 
         color: var(--textColor);
 
-        font-family: Consolas, monospace;
+        font-family: Georgia, "Times New Roman", serif;
 
         font-size: 7vw;
 
@@ -670,7 +670,7 @@
 
         color: var(--textColor);
 
-        font: 3.5vw Consolas, monospace;
+        font: 3.5vw Georgia, "Times New Roman", serif;
 
         line-height: 1.7;
 
@@ -703,7 +703,7 @@
 
         color: var(--textColor);
 
-        font-family: Consolas, monospace;
+        font-family: Georgia, "Times New Roman", serif;
 
         font-size: 7vw;
 
@@ -718,7 +718,7 @@
 
         color: var(--textColor);
 
-        font: 3.5vw Consolas, monospace;
+        font: 3.5vw Georgia, "Times New Roman", serif;
 
         line-height: 1.7;
 
