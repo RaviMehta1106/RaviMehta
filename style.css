@@ -1,4 +1,3 @@
-```css
 :root{
       background-color: #131212;/* black */
 
@@ -91,6 +90,25 @@
     font-size: 2vw;
 }
 
+@media (max-width: 768px) {
+    .header{
+        width: 100vw;
+        height: 15vh;
+    }
+
+    .nameText{
+        font: 6vh Consolas, monospace;
+    }
+
+
+    .welcomeText{
+        font: 2vh Consolas, monospace;
+    }
+
+    .contactMe{
+    display: none;
+    }
+}
 
 /* SUBHEADER */
 .subHeader{
@@ -137,6 +155,37 @@
 
 }
 
+@media (max-width: 768px) {
+    .subHeader{
+        width: 97vw;
+        margin-left: 1vw;
+         margin-right: 2vw;
+        height: 10vh;
+        
+    }
+
+    .sb-column{
+        height: 5vh;
+    }
+
+    .subHeaderText{
+        font: 1.5vh Consolas, monospace;
+    }
+
+    .subHeaderText2{
+        font: 3.8vh Consolas, monospace;
+    }
+
+    .subHeaderText3{
+        font: 1.5vh Consolas, monospace;
+    }
+
+    .sb-link{
+    font: 3vh Consolas, monospace;
+    padding: .5vh 1vh;
+    display: inline-block;
+    } 
+}
 
 /* INDEX BODY */
 .pictureStack{
@@ -232,6 +281,74 @@
     max-width: 90vw;
 }
 
+@media (max-width: 768px) {
+
+    .pictureStack{
+        margin-top: 5vh;
+        width: 60vw;
+    }
+
+    .selfie{
+        width: 40vw;
+        margin-top: 5vh;
+    }
+
+    .aboutMe{
+        display: none;
+    }
+
+    .aboutMeP{
+        display: none;
+    }
+
+    .aboutMeMobile{
+    display: none;
+    }
+
+    .aboutMeHeader{
+        left: 60vw; 
+        width: 40vw;
+        align-items: flex-end;
+    }
+
+    .aboutMePMobile{
+        display: block;
+        font: 1.5vh Consolas, monospace;
+        color: var(--lightPurple);
+        line-height: 1.7;
+        align-items: flex-end;
+
+        width: 40vw;
+    }
+
+    .aboutMePMobile2{
+        display: block;
+        position: absolute;
+
+        font: 1.5vh Consolas, monospace;
+        color: var(--lightPurple);
+        line-height: 1.7;
+        align-items: flex-start;
+
+
+        width: 90vw;
+        top: 75vh;
+        left: 8vw;
+  
+    }
+
+    .realStuffStack{
+        margin-top: 30vh;
+    }
+
+    .realStuffP{
+        font: 1.5vh Consolas, monospace;
+        line-height: 1.7; /* why do i need t reset line-height here */
+    }
+
+
+}
+
 
 /*RESUME SCREEN*/
 .download-link{
@@ -271,207 +388,7 @@
     outline:  none;
 }
 
-/* =========================================================
-   MOBILE ONLY
-   ========================================================= */
-
 @media (max-width: 768px) {
-
-    .header{
-        width: 100vw;
-        height: auto;
-        margin: 0;
-        padding: 5vh 4vw 3vh 4vw;
-
-        box-sizing: border-box;
-
-        align-items: center;
-        position: static;
-    }
-
-    .nameText{
-        font: 8vw Consolas, monospace;
-        text-align: center;
-        white-space: normal;
-    }
-
-    .welcomeText{
-        font: 4vw Consolas, monospace;
-        text-align: center;
-        margin-top: 1vh;
-    }
-
-    .contactMe{
-        position: static;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        margin-top: 3vh;
-
-        font: 3.5vw Consolas, monospace;
-        line-height: 1.5;
-        text-align: center;
-    }
-
-    .contactTitle{
-        font-size: 4vw;
-    }
-
-
-    /* SUBHEADER */
-
-    .subHeader{
-        width: 100vw;
-        height: auto;
-        margin: 0;
-        padding: 2vh 4vw 4vh 4vw;
-
-        box-sizing: border-box;
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sb-column{
-        height: auto;
-
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .subHeaderText{
-        font: 4vw Consolas, monospace;
-        text-align: center;
-
-        margin: 0 0 1.5vh 0;
-    }
-
-    .sb-link{
-        font: 4vw Consolas, monospace;
-        padding: .8vh 3vw;
-
-        align-self: center;
-    }
-
-
-    /* PICTURE */
-
-    .pictureStack{
-        width: 100vw;
-        margin: 2vh 0 0 0;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .selfie{
-        width: 60vw;
-        max-width: 300px;
-
-        margin: 0;
-    }
-
-
-    /* ABOUT ME */
-
-    .aboutMe{
-        position: static;
-
-        width: 90vw;
-
-        margin: 5vh auto 0 auto;
-        padding: 4vw;
-
-        box-sizing: border-box;
-
-        pointer-events: auto;
-
-        text-align: center;
-    }
-
-    .aboutMeHeader{
-        width: 100%;
-        font-size: 7vw;
-
-        margin: 0 0 2vh 0;
-
-        text-align: center;
-    }
-
-    .aboutMeP{
-        width: 100%;
-
-        font: 3.5vw Consolas, monospace;
-        line-height: 1.7;
-
-        margin: 0;
-
-        text-align: center;
-    }
-
-
-    /* Hide the extra mobile versions */
-
-    .aboutMeMobile{
-        display: none;
-    }
-
-    .aboutMePMobile{
-        display: none;
-    }
-
-    .aboutMePMobile2{
-        display: none;
-    }
-
-
-    /* PROJECTS */
-
-    .realStuffStack{
-        width: 100vw;
-        margin-top: 6vh;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .realStuff{
-        width: 90vw;
-
-        font-size: 7vw;
-
-        margin: 0 0 3vh 0;
-
-        text-align: center;
-    }
-
-    .realStuffP{
-        width: 85vw;
-
-        font: 3.5vw Consolas, monospace;
-        line-height: 1.7;
-
-        margin: 1vh 0;
-
-        text-align: center;
-    }
-
-
-    /* FOOTER */
-
-    .footer{
-        width: 80vw;
-        max-width: 400px;
-
-        margin-top: 5vh;
-    }
-
-
-    /* RESUME SCREEN */
-
     .download-link{
         font: 2vh Consolas, monospace;
     }
@@ -479,4 +396,5 @@
     .resume{
         width: 100vw;
     }
+
 }
