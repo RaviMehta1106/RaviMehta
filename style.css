@@ -311,30 +311,66 @@
         align-items: flex-end;
     }
 
+    .aboutMeMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 90vw;
+        margin: 5vh auto 0 auto;
+
+        background-color: var(--backgroundColor2);
+        padding: 4vw;
+
+        border: .15vw solid var(--textColor);
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .aboutMeHeaderMobile{
+        display: block;
+
+        width: 100%;
+
+        font-family: Consolas, monospace;
+        color: var(--textColor);
+        font-size: 7vw;
+
+        margin: 0 0 2vh 0;
+
+        text-align: center;
+    }
+
     .aboutMePMobile{
         display: block;
-        font: 1.5vh Consolas, monospace;
-        color: var(--lightPurple);
-        line-height: 1.7;
-        align-items: flex-end;
 
-        width: 40vw;
+        width: 100%;
+
+        font: 3.5vw Consolas, monospace;
+        color: var(--textColor);
+        line-height: 1.7;
+
+        margin: 0;
+
+        text-align: center;
     }
 
     .aboutMePMobile2{
         display: block;
-        position: absolute;
 
-        font: 1.5vh Consolas, monospace;
-        color: var(--lightPurple);
-        line-height: 1.7;
-        align-items: flex-start;
-
+        position: static;
 
         width: 90vw;
-        top: 75vh;
-        left: 8vw;
-  
+
+        margin: 4vh auto 0 auto;
+
+        font: 3.5vw Consolas, monospace;
+        color: var(--lightPurple);
+        line-height: 1.7;
+
+        text-align: center;
     }
 
     .realStuffStack{
@@ -395,6 +431,299 @@
 
     .resume{
         width: 100vw;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE VERSION
+   ========================================================= */
+
+
+/* Hide mobile version by default */
+
+.headerMobile,
+.resumeMobile,
+.pictureMobile,
+.aboutMeMobile,
+.projectsMobile {
+    display: none;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Hide DESKTOP versions */
+
+    .colorBlock,
+    .subHeader,
+    .pictureStack,
+    .aboutMe,
+    .realStuffStack {
+        display: none;
+    }
+
+
+    /* =====================================================
+       MOBILE HEADER
+       ===================================================== */
+
+    .headerMobile {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100vw;
+
+        padding: 5vh 4vw 3vh 4vw;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .nameTextMobile {
+
+        color: var(--textColor);
+
+        font: 8vw Consolas, monospace;
+
+        margin: 0;
+
+        text-align: center;
+
+        white-space: normal;
+    }
+
+    .welcomeTextMobile {
+
+        color: var(--textColor);
+
+        font: 4vw Consolas, monospace;
+
+        margin: 1vh 0 0 0;
+
+        text-align: center;
+    }
+
+    .contactMeMobile {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 3vh;
+
+        color: var(--textColor2);
+
+        font: 3.5vw Consolas, monospace;
+
+        line-height: 1.5;
+
+        text-align: center;
+    }
+
+    .contactTitleMobile {
+
+        color: var(--textColor2);
+
+        font-size: 4vw;
+    }
+
+
+    /* =====================================================
+       MOBILE RESUME
+       ===================================================== */
+
+    .resumeMobile {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100vw;
+
+        padding: 2vh 4vw 4vh 4vw;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .resumeTextMobile {
+
+        color: var(--textColor2);
+
+        font: 4vw Consolas, monospace;
+
+        margin: 0 0 1.5vh 0;
+    }
+
+    .resumeButtonMobile {
+
+        color: var(--backgroundColor2);
+        background: var(--textColor);
+
+        font: 4vw Consolas, monospace;
+
+        border: .5vw ridge var(--backgroundColor2);
+
+        text-decoration: none;
+
+        padding: .8vh 3vw;
+    }
+
+    .resumeButtonMobile:hover {
+
+        color: var(--textColor2);
+        background: var(--textColor3);
+    }
+
+
+    /* =====================================================
+       MOBILE PICTURE
+       ===================================================== */
+
+    .pictureMobile {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100vw;
+
+        margin-top: 2vh;
+    }
+
+    .selfieMobile {
+
+        width: 60vw;
+
+        max-width: 300px;
+
+        border: 1vw solid var(--backgroundColor2);
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       MOBILE ABOUT ME
+       ===================================================== */
+
+    .aboutMeMobile {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 90vw;
+
+        margin: 5vh auto 0 auto;
+
+        padding: 4vw;
+
+        background-color: var(--backgroundColor2);
+
+        border: .15vw solid var(--textColor);
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .aboutMeHeaderMobile {
+
+        color: var(--textColor);
+
+        font-family: Consolas, monospace;
+
+        font-size: 7vw;
+
+        width: 100%;
+
+        margin: 0 0 2vh 0;
+
+        text-align: center;
+    }
+
+    .aboutMePMobile {
+
+        color: var(--textColor);
+
+        font: 3.5vw Consolas, monospace;
+
+        line-height: 1.7;
+
+        width: 100%;
+
+        margin: 0;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       MOBILE PROJECTS
+       ===================================================== */
+
+    .projectsMobile {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100vw;
+
+        margin-top: 6vh;
+
+        text-align: center;
+    }
+
+    .projectsHeaderMobile {
+
+        color: var(--textColor);
+
+        font-family: Consolas, monospace;
+
+        font-size: 7vw;
+
+        width: 90vw;
+
+        margin: 0 0 3vh 0;
+
+        text-align: center;
+    }
+
+    .projectsPMobile {
+
+        color: var(--textColor);
+
+        font: 3.5vw Consolas, monospace;
+
+        line-height: 1.7;
+
+        width: 85vw;
+
+        margin: 1vh 0;
+
+        text-align: center;
+    }
+
+    .footerMobile {
+
+        width: 80vw;
+
+        max-width: 400px;
+
+        margin-top: 5vh;
     }
 
 }
