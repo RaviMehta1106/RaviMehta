@@ -1,7 +1,7 @@
 :root{
       background-color: #131212;/* black */
 
-      --backgroundColor2: #ffffff; /*white */
+      --backgroundColor2: #fcf5ea; /*white */
 
       --textColor: #045f39; /* dark green */
       --textColor2: #6245ac; /* purple */
@@ -275,6 +275,52 @@
     line-height: 1.7;
 
     width: 80vw;
+}
+
+/* PROJECT BOX */
+
+.projectBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60vw;
+
+    background-color: var(--backgroundColor2);
+
+    padding: 1vw 2vw;
+
+    border: .15vw solid var(--textColor);
+
+    box-sizing: border-box;
+
+    margin: 4vw auto;
+}
+
+.projectBoxHeader {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+
+    color: var(--textColor);
+
+    font-size: 3vw;
+
+    margin-top: 0;
+
+    width: 100%;
+}
+
+.projectBoxP {
+    font: 1.5vw Georgia, "Times New Roman", serif;
+
+    color: var(--textColor);
+
+    line-height: 1.7;
+
+    margin-top: 0;
+
+    width: 100%;
 }
 
 
@@ -738,13 +784,11 @@
 
     .footerMobile {
 
-    width: 80vw;
+        width: 80vw;
 
-    max-width: 400px;
+        max-width: 400px;
 
-    margin-top: 2vh;
-    margin-bottom: 0;
-    padding-bottom: 0;
+        margin-top: 5vh;
     }
 
 }
