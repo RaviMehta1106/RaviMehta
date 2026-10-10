@@ -1122,3 +1122,165 @@
     }
 }
 
+/* DESKTOP: KEEP PROJECT TEXT AND VIDEO ON ONE ROW */
+.projectRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+    width: 96vw;
+    max-width: none;
+    margin: 2vw 0 2vw 1vw;
+    box-sizing: border-box;
+}
+
+/* Slimmer text box, positioned closer to the left edge */
+.projectRow .projectBox {
+    width: 38vw;
+    max-width: 520px;
+    flex: 0 1 38vw;
+    min-width: 0;
+    margin: 0;
+    padding: 1vw 1.2vw;
+    box-sizing: border-box;
+}
+
+.projectRow .projectBoxHeader {
+    font-size: 2.2vw;
+}
+
+.projectRow .projectBoxP {
+    font-size: 1.1vw;
+    line-height: 1.5;
+}
+
+/* Video sits directly beside the text box */
+.projectVideo {
+    display: block;
+    width: 28vw;
+    max-width: 340px;
+    max-height: 250px;
+    height: auto;
+    flex: 0 1 28vw;
+    min-width: 0;
+    margin: 0;
+    object-fit: contain;
+    background: #131212;
+}
+
+/* Center the footer independently of the left-aligned project row */
+.realStuffStack > .footer,
+.realStuffStack .footer {
+    display: block;
+    align-self: center;
+    width: 80vw;
+    max-width: 400px;
+    margin: 2vh auto 0 auto;
+}
+
+/* MOBILE: CENTER PROJECT TEXT, THEN SHOW VIDEO BELOW */
+.projectVideoMobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .projectRow {
+        flex-direction: column;
+        gap: 2vh;
+        width: 100%;
+        margin: 2vh auto;
+    }
+
+    .projectRow .projectBox {
+        width: 90vw;
+        flex: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .projectVideo {
+        display: none;
+    }
+
+    .projectVideoMobile {
+        display: block;
+        width: 90vw;
+        max-width: 640px;
+        height: auto;
+        margin: 2vh auto 0 auto;
+        object-fit: contain;
+        background: #131212;
+    }
+}
+
+
+/* FINAL DESKTOP PROJECT LAYOUT FIX */
+@media (min-width: 769px) {
+    /* Keep the Projects heading centered across the whole page */
+    .projectsTitle {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Put the description and video beside one another */
+    .realStuffStack .projectRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2vw;
+        width: 96vw;
+        margin: 2vw auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .realStuffStack .projectRow > .projectBox {
+        flex: 0 0 38vw;
+        width: 38vw;
+        max-width: 500px;
+        margin: 0;
+        padding: 1vw 1.2vw;
+        box-sizing: border-box;
+    }
+
+    .realStuffStack .projectRow > .projectBox .projectBoxHeader {
+        font-size: 2vw;
+        text-align: center;
+        margin: 0 0 0.8vw;
+    }
+
+    .realStuffStack .projectRow > .projectBox .projectBoxP {
+        font-size: 1vw;
+        line-height: 1.45;
+        margin: 0;
+    }
+
+    .realStuffStack .projectRow > .projectVideo {
+        display: block;
+        flex: 0 1 24vw;
+        width: 24vw;
+        max-width: 300px;
+        max-height: 220px;
+        height: auto;
+        margin: 0;
+        object-fit: contain;
+    }
+
+    /* Center the decorative footer regardless of the project row alignment */
+    .realStuffStack .footer {
+        display: block;
+        width: 80vw;
+        max-width: 400px;
+        margin: 2vh auto 0 !important;
+        align-self: center;
+        position: relative;
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+}
