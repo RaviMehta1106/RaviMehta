@@ -739,48 +739,32 @@
        MOBILE PROJECTS
        ===================================================== */
 
-    .projectsMobile {
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+/* MOBILE PROJECT BOX */
 
-        width: 100%;
+@media (max-width: 768px) {
 
-        margin-top: 6vh;
-
-        text-align: center;
-    }
-
-    .projectsHeaderMobile {
-
-        color: var(--textColor);
-
-        font-family: Georgia, "Times New Roman", serif;
-
-        font-size: 7vw;
-
+    .projectBoxMobile {
         width: 90vw;
-
-        margin: 0 0 3vh 0;
-
-        text-align: center;
+        margin: 2vh auto 0 auto;
+        padding: 4vw;
     }
 
-    .projectsPMobile {
+    .projectBoxHeaderMobile {
+        font-size: 7vw;
+        text-align: center;
+        margin: 0 0 2vh 0;
+    }
 
-        color: var(--textColor);
-
-        font: 3.5vw Georgia, "Times New Roman", serif;
-
+    .projectBoxPMobile {
+        font-size: 3.5vw;
+        text-align: center;
         line-height: 1.7;
-
-        width: 85vw;
-
-        margin: 1vh 0;
-
-        text-align: center;
+        margin: 0;
     }
+
+}
+
 
     .footerMobile {
 
