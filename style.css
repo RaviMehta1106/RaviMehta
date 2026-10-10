@@ -1226,7 +1226,7 @@
         margin-right: auto;
     }
 
-    /* Put the description and video beside one another */
+    /* Row: text box takes 2/3, video takes 1/3, same vertical level */
     .realStuffStack .projectRow {
         display: flex;
         flex-direction: row;
@@ -1240,38 +1240,40 @@
     }
 
     .realStuffStack .projectRow > .projectBox {
-        flex: 0 0 38vw;
-        width: 38vw;
-        max-width: 500px;
+        flex: 2 1 0;
+        width: auto;
+        max-width: none;
+        min-width: 0;
         margin: 0;
-        padding: 1vw 1.2vw;
+        padding: 1.5vw 2vw;
         box-sizing: border-box;
     }
 
     .realStuffStack .projectRow > .projectBox .projectBoxHeader {
-        font-size: 2vw;
+        font-size: 2.4vw;
         text-align: center;
-        margin: 0 0 0.8vw;
+        margin: 0 0 1vw;
     }
 
     .realStuffStack .projectRow > .projectBox .projectBoxP {
-        font-size: 1vw;
-        line-height: 1.45;
+        font-size: 1.2vw;
+        line-height: 1.6;
         margin: 0;
     }
 
     .realStuffStack .projectRow > .projectVideo {
         display: block;
-        flex: 0 1 24vw;
-        width: 24vw;
-        max-width: 300px;
-        max-height: 220px;
+        flex: 0 0 auto;
+        width: auto;
         height: auto;
+        max-width: 30vw;
+        max-height: 28vw;
+        min-width: 0;
         margin: 0;
         object-fit: contain;
     }
 
-    /* Center the decorative footer regardless of the project row alignment */
+    /* Center the decorative footer */
     .realStuffStack .footer {
         display: block;
         width: 80vw;
