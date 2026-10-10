@@ -1,288 +1,439 @@
-:root{
-      background-color: #131212;/* black */
+:root {
+    --backgroundColor: #131212; /* black */
+    background-color: #131212;
 
       --backgroundColor2: #fcf5ea; /*white */
 
       --textColor: #045f39; /* dark green */
+
       --textColor2: #6245ac; /* purple */
+
       --textColor3: #1a4101; /*darkest green */
 
       /* for game blurbs */
+
       --green: #005a42;/* 35ff69 */
+
       --darkGreen: #1a7a32;
+
       --lightGreen: #aefac1;
 
       --red: #ef2d74; /* ef2d56 */
+
       --darkRed: #560415;
+
       --lightRed: #ff5076;
 
       --blue: #0027c5;/* 2ec4b6 */
+
       --darkBlue: #2069b8;
+
       --lightBlue: #71d4ed;
 
       --redred: #ff0000; /* ef2d56 */
 
       /* for about me */
+
       --purple: #645dd7;
+
       --darkPurple: #2f2d62;
+
       --lightPurple: #8a86d6;
 
       overflow-x: hidden; /* get rid of horizontal scroll */
+
 }
 
 /* flex-direction sets main axis, justify-content aligns on main axis */
+
 /* align-itmes/self aligns on cross axis */
 
 .colorBlock{
+
     display: flex;
+
     background-color: var( --backgroundColor2);
 
     width: 100vw;
+
 }
 
 /*HEADER*/
+
 .header{
+
     display: flex;
+
     flex-direction: column;
 
     height: 11vw;
+
     margin-top: 2vw;
+
     margin-left: 2vw;
+
     width: 95vw;
 
     position: relative;
+
 }
 
 .nameText{
+
     color: var(--textColor);
+
     font: bold 6vw Georgia, "Times New Roman", serif;
+
     white-space: nowrap;
 
     margin: 0;
+
     gap: 1vw;
+
     align-self: center;
+
 }
 
 .welcomeText{
+
     color: var(--textColor);
+
     font: 2vw Georgia, "Times New Roman", serif;
+
     margin: 0;
+
     gap: 1vw;
+
     align-self: center;
 
 }
 
 .contactMe{
+
     position: absolute;
 
     top: 0.5vw;
+
     right: 2vw;
 
     color: var(--textColor2);
+
     font: 1.2vw Georgia, "Times New Roman", serif;
+
     line-height: 1.4;
 
     text-align: left;
+
 }
 
 .contactTitle{
+
     color: var(--textColor2);
+
     font-size: 2vw;
+
 }
 
 @media (max-width: 768px) {
+
     .header{
+
         width: 100vw;
+
         height: 15vh;
+
     }
 
     .nameText{
+
         font: bold 6vh Georgia, "Times New Roman", serif;
+
     }
 
-
     .welcomeText{
+
         font: 2vh Georgia, "Times New Roman", serif;
+
     }
 
     .contactMe{
+
     display: none;
+
     }
+
 }
 
 /* SUBHEADER */
+
 .subHeader{
+
     display: flex;
+
     flex-direction: row;
 
     justify-content: space-between;
+
     align-items: center;
+
     margin-left: 50vw;
-    width: 46vw; 
+
+    width: 46vw;
+
     height: 4vw;
+
 }
 
 .sb-column{
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: space-between;
 
     height : 5vw;
+
 }
 
 .subHeaderText{
+
     color: var(--textColor2);
+
     font: 3vw Georgia, "Times New Roman", serif;
+
     margin-top: 1.5vw;
+
     margin-bottom: 1.5vw;
+
 }
 
-
 .sb-link{
+
   color: var(--backgroundColor2);
+
   background: var(--backgroundColor);
+
   font: 2.25vw Georgia, "Times New Roman", serif;
+
   border: .3vw ridge var(--backgroundColor2);
+
   text-decoration: none;
+
   align-self: center;
+
   padding: .3vw .6vw;
+
   display: inline-block;
+
 }
 
 .sb-link:hover{
+
   color: var(--textColor2);
+
   background: var(--textColor3);
 
 }
 
 @media (max-width: 768px) {
+
     .subHeader{
+
         width: 97vw;
+
         margin-left: 1vw;
+
          margin-right: 2vw;
+
         height: 10vh;
-        
+
     }
 
     .sb-column{
+
         height: 5vh;
+
     }
 
     .subHeaderText{
+
         font: 1.5vh Georgia, "Times New Roman", serif;
+
     }
 
     .subHeaderText2{
+
         font: 3.8vh Georgia, "Times New Roman", serif;
+
     }
 
     .subHeaderText3{
+
         font: 1.5vh Georgia, "Times New Roman", serif;
+
     }
 
     .sb-link{
+
     font: 3vh Georgia, "Times New Roman", serif;
+
     padding: .5vh 1vh;
+
     display: inline-block;
-    } 
+
+    }
+
 }
 
 /* INDEX BODY */
+
 .pictureStack{
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
 
     width: 40vw;
 
     transform: translateX(-2vw);
+
 }
 
 .selfie{
+
     border: 1vw solid var(--backgroundColor2);
 
-    
     margin-bottom: 2vw;
+
     width: 25vw;
+
 }
 
-
 .aboutMe{
+
     position: absolute;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
-    
+
     left: 36vw;
+
     top: 25vw;
+
     width: 60vw;
 
     background-color: var(--backgroundColor2);
+
     padding: 1vw 2vw;
+
     border: .15vw solid var(--textColor);
+
     box-sizing: border-box;
 
     pointer-events: none;
+
 }
 
 .aboutMeHeader{
+
     font-family: Georgia, "Times New Roman", serif;
+
     color: var(--textColor);
+
     font-size: 3vw;
+
     margin-top: 0;
+
     width: 56vw;
+
 }
 
 .aboutMeP{
+
     font: 1.5vw Georgia, "Times New Roman", serif;
+
     color: var(--textColor);
+
     line-height: 1.7;
+
     margin-top: 0;
+
     width: 52vw;
+
 }
 
 .aboutMePMobile{
+
     display: none;
+
 }
 
 .aboutMePMobile2{
+
     display: none;
+
 }
 
 .realStuffStack{
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
 
     width: 100vw;
+
 }
 
 .realStuff{
+
     font-family: Georgia, "Times New Roman", serif;
+
     color: var(--textColor);
+
     font-size: 3vw;
 
     width: 90vw;
+
     margin-top: 8vw;
+
 }
 
 .realStuffP{
+
     font: 1.5vw Georgia, "Times New Roman", serif;
+
     color: var(--textColor);
+
     line-height: 1.7;
 
     width: 80vw;
+
 }
 
 /* PROJECT BOX */
 
 .projectBox {
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
 
     width: 60vw;
@@ -296,10 +447,13 @@
     box-sizing: border-box;
 
     margin: 4vw auto;
+
 }
 
 .projectBoxHeader {
+
     font-family: Georgia, "Times New Roman", serif;
+
     font-weight: bold;
 
     color: var(--textColor);
@@ -309,9 +463,11 @@
     margin-top: 0;
 
     width: 100%;
+
 }
 
 .projectBoxP {
+
     font: 1.5vw Georgia, "Times New Roman", serif;
 
     color: var(--textColor);
@@ -321,9 +477,8 @@
     margin-top: 0;
 
     width: 100%;
+
 }
-
-
 
 .footer {
 
@@ -332,87 +487,123 @@
     max-width: 400px;
 
     margin-top: 2vh;
+
     margin-bottom: 0;
+
     padding-bottom: 0;
+
 }
 
 @media (max-width: 768px) {
 
     .pictureStack{
+
         margin-top: 5vh;
+
         width: 60vw;
+
     }
 
     .selfie{
+
         width: 40vw;
+
         margin-top: 5vh;
+
     }
 
     .aboutMe{
+
         display: none;
+
     }
 
     .aboutMeP{
+
         display: none;
+
     }
 
     .aboutMeMobile{
+
     display: none;
+
     }
 
     .aboutMeHeader{
-        left: 60vw; 
+
+        left: 60vw;
+
         width: 40vw;
+
         align-items: flex-end;
+
     }
 
     .aboutMeMobile{
+
         display: flex;
+
         flex-direction: column;
+
         justify-content: center;
+
         align-items: center;
 
         width: 90vw;
+
         margin: 5vh auto 0 auto;
 
         background-color: var(--backgroundColor2);
+
         padding: 4vw;
 
         border: .15vw solid var(--textColor);
+
         box-sizing: border-box;
 
         text-align: center;
+
     }
 
     .aboutMeHeaderMobile{
+
         display: block;
 
         width: 100%;
 
         font-family: Georgia, "Times New Roman", serif;
+
         color: var(--textColor);
+
         font-size: 7vw;
 
         margin: 0 0 2vh 0;
 
         text-align: center;
+
     }
 
     .aboutMePMobile{
+
         display: block;
 
         width: 100%;
 
         font: 3.5vw Georgia, "Times New Roman", serif;
+
         color: var(--textColor);
+
         line-height: 1.7;
 
         margin: 0;
 
         text-align: center;
+
     }
 
     .aboutMePMobile2{
+
         display: block;
 
         position: static;
@@ -422,124 +613,175 @@
         margin: 4vh auto 0 auto;
 
         font: 3.5vw Georgia, "Times New Roman", serif;
+
         color: var(--lightPurple);
+
         line-height: 1.7;
 
         text-align: center;
+
     }
 
     .realStuffStack{
+
         margin-top: 30vh;
+
     }
 
     .realStuffP{
-        font: 1.5vh Georgia, "Times New Roman", serif;
-        line-height: 1.7; /* why do i need t reset line-height here */
-    }
 
+        font: 1.5vh Georgia, "Times New Roman", serif;
+
+        line-height: 1.7; /* why do i need t reset line-height here */
+
+    }
 
 }
 
-
 /*RESUME SCREEN*/
+
 .download-link{
+
   color: var(--backgroundColor2);
+
   background: var(--textColor2);
+
   font: 1.5vw Georgia, "Times New Roman", serif;
+
   border: .4vw ridge var(--backgroundColor2);
+
   text-decoration: none;
 
   position: absolute;
+
   top: 2vw;
+
   right: 2vw;
 
   padding: 1vw 1.5vw;
+
 }
 
 .download-link:hover{
+
   color: var(--textColor2);
+
   background: var(--textColor3);
 
 }
 
 .resumeBody{
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
     align-items: center;
 
 }
 
 .resume{
+
     margin-top: 10vw;
+
     width: 80vw;
+
     height: 120vw;
 
     border: none;
+
     outline:  none;
+
 }
 
 @media (max-width: 768px) {
+
     .download-link{
+
         font: 2vh Georgia, "Times New Roman", serif;
+
     }
 
     .resume{
+
         width: 100vw;
+
     }
 
 }
 
-
-
 /* =========================================================
-   MOBILE VERSION
-   ========================================================= */
 
+   MOBILE VERSION
+
+   ========================================================= */
 
 /* Hide mobile version by default */
 
 .headerMobile,
+
 .resumeMobile,
+
 .pictureMobile,
+
 .aboutMeMobile,
+
 .projectsMobile {
+
     display: none;
+
 }
 
-
 /* =========================================================
+
    MOBILE
+
    ========================================================= */
 
 @media (max-width: 768px) {
 
     /* Hide DESKTOP versions */
+
     html, body {
+
         width: 100%;
+
         margin: 0;
+
         padding: 0;
+
         overflow-x: hidden;
+
     }
 
-    
     .colorBlock,
-    .subHeader,
-    .pictureStack,
-    .aboutMe,
-    .realStuffStack {
-        display: none;
-    }
 
+    .subHeader,
+
+    .pictureStack,
+
+    .aboutMe,
+
+    .realStuffStack {
+
+        display: none;
+
+    }
 
     /* =====================================================
+
        MOBILE HEADER
+
        ===================================================== */
 
     .headerMobile {
 
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
 
         width: 100%;
@@ -551,7 +793,7 @@
         text-align: center;
 
         background-color: var(--backgroundColor2);
-        
+
     }
 
     .nameTextMobile {
@@ -565,6 +807,7 @@
         text-align: center;
 
         white-space: normal;
+
     }
 
     .welcomeTextMobile {
@@ -576,12 +819,15 @@
         margin: 1vh 0 0 0;
 
         text-align: center;
+
     }
 
     .contactMeMobile {
 
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
 
         margin-top: 3vh;
@@ -593,6 +839,7 @@
         line-height: 1.5;
 
         text-align: center;
+
     }
 
     .contactTitleMobile {
@@ -600,17 +847,21 @@
         color: var(--textColor2);
 
         font-size: 4vw;
+
     }
 
-
     /* =====================================================
+
        MOBILE RESUME
+
        ===================================================== */
 
     .resumeMobile {
 
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
 
         width: 100%;
@@ -620,6 +871,7 @@
         box-sizing: border-box;
 
         text-align: center;
+
     }
 
     .resumeTextMobile {
@@ -629,11 +881,13 @@
         font: 4vw Georgia, "Times New Roman", serif;
 
         margin: 0 0 1.5vh 0;
+
     }
 
     .resumeButtonMobile {
 
         color: var(--backgroundColor2);
+
         background: var(--textColor);
 
         font: 4vw Georgia, "Times New Roman", serif;
@@ -643,28 +897,35 @@
         text-decoration: none;
 
         padding: .8vh 3vw;
+
     }
 
     .resumeButtonMobile:hover {
 
         color: var(--textColor2);
+
         background: var(--textColor3);
+
     }
 
-
     /* =====================================================
+
        MOBILE PICTURE
+
        ===================================================== */
 
     .pictureMobile {
 
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
 
         width: 100%;
 
         margin-top: 2vh;
+
     }
 
     .selfieMobile {
@@ -676,17 +937,21 @@
         border: 1vw solid var(--backgroundColor2);
 
         box-sizing: border-box;
+
     }
 
-
     /* =====================================================
+
        MOBILE ABOUT ME
+
        ===================================================== */
 
     .aboutMeMobile {
 
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
 
         width: 90vw;
@@ -702,6 +967,7 @@
         box-sizing: border-box;
 
         text-align: center;
+
     }
 
     .aboutMeHeaderMobile {
@@ -717,6 +983,7 @@
         margin: 0 0 2vh 0;
 
         text-align: center;
+
     }
 
     .aboutMePMobile {
@@ -732,17 +999,21 @@
         margin: 0;
 
         text-align: center;
+
     }
 
-
     /* =====================================================
+
        MOBILE PROJECTS
+
        ===================================================== */
 
     .projectsMobile {
 
         display: flex;
+
         flex-direction: column;
+
         align-items: center;
 
         width: 100%;
@@ -750,6 +1021,7 @@
         margin-top: 6vh;
 
         text-align: center;
+
     }
 
     .projectsHeaderMobile {
@@ -765,6 +1037,7 @@
         margin: 0 0 3vh 0;
 
         text-align: center;
+
     }
 
     .projectsPMobile {
@@ -780,41 +1053,51 @@
         margin: 1vh 0;
 
         text-align: center;
+
     }
-    
+
 /* MOBILE PROJECT BOX */
 
-@media (max-width: 768px) {
+.projectBoxMobile {
 
-    .projectBoxMobile {
         width: 90vw;
+
         margin: 2vh auto 0 auto;
+
         padding: 4vw;
+
     }
 
     .projectBoxHeaderMobile {
+
         font-size: 7vw;
+
         text-align: center;
+
         margin: 0 0 2vh 0;
+
     }
 
     .projectBoxPMobile {
+
         font-size: 3.5vw;
+
         text-align: center;
+
         line-height: 1.7;
+
         margin: 0;
+
     }
 
-}
-
-
-    .footerMobile {
+.footerMobile {
 
         width: 80vw;
 
         max-width: 400px;
 
         margin-top: 5vh;
+
     }
 
 }
