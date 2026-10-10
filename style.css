@@ -1101,3 +1101,24 @@
     }
 
 }
+
+/* PROJECTS SECTION TITLE (DESKTOP + MOBILE) */
+.projectsTitle {
+    color: var(--textColor2);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 2vw 0 0 0;
+    padding: 0;
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+    .projectsTitle {
+        font-size: 7vw;
+        margin: 0 0 1vh 0;
+    }
+}
+
